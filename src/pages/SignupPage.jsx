@@ -1,7 +1,19 @@
-const SignupPage = () => {
-    return(
-        <h1>회원가입 페이지</h1>
-    );
-};
+import React from "react";
+import Header from "../components/Header";
+import Info from "../components/Info";
+import Footer from "../components/Footer";
 
-export default SignupPage;
+const SignUpPage = () => {
+    return (
+        <div style={{backgroundColor: "black", minHeight: "100vh", maxWidth: "100vw"}}>
+            <Header />
+
+            <Info />
+
+            <Footer />
+
+        </div>
+    )
+}
+
+export default SignUpPage;
