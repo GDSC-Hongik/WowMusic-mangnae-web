@@ -1,0 +1,126 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+
+.wrapper_signup {
+    background-color: black;
+    box-sizing: border-box;
+    border: 1px solid red;
+
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.wrapper_signup .wrapper__signup__text {
+    font-family: -apple-system, 
+        BlinkMacSystemFont, 
+        "Apple SD Gothic Neo", 
+        "Pretendard Variable", 
+        Pretendard, Roboto, 
+        "Noto Sans KR", 
+        "Segoe UI", 
+        "Malgun Gothic", 
+        "Apple Color Emoji", 
+        "Segoe UI Emoji", 
+        "Segoe UI Symbol", 
+        sans-serif;
+    line-height: 10px;
+    
+    box-sizing: border-box;
+    border: 1px solid white;
+    
+}
+
+h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+p {
+    color: white;
+    font-size: 12px;
+    font-weight: regular;
+}
+
+.wrapper_signup .wrapper__signup__input {
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+
+    margin-top: 42px;
+    
+}
+
+.wrapper_signup .wrapper__signup__input > div {
+    width: 294px;
+    height: 54px;
+
+    /* border: 1px solid blue; */
+    margin-bottom: 25px;
+}
+
+.wrapper__signup__input .wrapper_name {
+    margin-bottom: 20px;
+}
+
+.wrapper__signup__input .wrapper_email {
+    margin-bottom: 20px;
+}
+
+.wrapper__signup__input .wrapper_pw {
+    margin-bottom: 20px;
+}
+
+.wrapper__signup__input .name {
+    width: 280px;
+    height: 54px;
+    background-color: black;
+
+    border: 1px solid rgba(217, 217, 217, 1);
+    border-radius: 5px;
+}
+
+.wrapper__signup__input .email {
+    width: 280px;
+    height: 54px;
+    background-color: black;
+
+    border: 1px solid rgba(217, 217, 217, 1);
+    border-radius: 5px;
+}
+
+.wrapper__signup__input .pw {
+    width: 280px;
+    height: 54px;
+    background-color: black;
+
+    border: 1px solid rgba(217, 217, 217, 1);
+    border-radius: 5px;
+}
+
+.wrapper__signup__input .pw_repeat {
+    width: 280px;
+    height: 54px;
+    background-color: black;
+
+    border: 1px solid rgba(217, 217, 217, 1);
+    border-radius: 5px;
+}
+
+.wrapper__signup__input .birth {
+    color: black;
+}
+
+.wrapper__signup__input .CreateAcount {
+    border-radius: 3px;
+    width: 294px;
+    height: 53px;
+    background-color: rgba(176, 176, 176, 1);
+    border: 1px solid rgba(231, 231, 231, 1);
+
+    color: rgba(231, 231, 231, 1);
+
+
+}
