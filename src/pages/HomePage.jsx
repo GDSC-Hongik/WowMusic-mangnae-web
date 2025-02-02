@@ -9,7 +9,7 @@ const HomePage = () => {
             <Header />
             <h1>홈페이지입니다.</h1>
             <button>
-              <Link to="/login">로그인</Link>
+              <Link to="/List">Find out</Link>
             </button>
         </div>
     )

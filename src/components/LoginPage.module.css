@@ -1,8 +1,6 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 
-*{
-    background-color: #111;
-}
+
 .box{
     display: flex;
     width: 294px;
