@@ -1,8 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { login } from "../components/Auth";
+import style from "../components/LoginPage.module.css"
+
 
 const LoginPage = () => {
+    const navigate = useNavigate();
     const [user, setUser] = useState({
         email: '',
         password: ''
@@ -15,39 +18,13 @@ const LoginPage = () => {
 
             const result = await login({email, password});
             if(result){
-                alert("로그인 성공")
+                alert("로그인 성공");
+                navigate('/');
             }
         } catch (error){
-            alert("로그인 실패")
+            alert("로그인 실패");
         }
     };
-
-        /* await new Promise((r) => setTimeout(r, 1000));
-    
-        const response = await fetch(
-            "http://127.0.0.1:8000/api/users/login",
-            {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({
-                    email,
-                    password,
-                }),
-            }
-        );
-        console.log("Response status:", response.status); // 응답 상태 코드 출력
-        const result = await response.json();
-        console.log("Response body:", result);
-
-        if(response.status === 200){
-            alert("로그인 성공");
-        }
-        else {
-            alert("로그인 실패");
-        } 
-    }*/
 
     const handleChange = (e) => {
         const {name, value} = e.target;
@@ -55,10 +32,11 @@ const LoginPage = () => {
     }
 
     return(
-        <>
-            <div>아직 계정이 없으신가요? <Link to="/signup">회원가입</Link></div>
-            <form onSubmit={confirmLogin}>
-                <input
+        <div className={style.box}>
+            <h1 className={style.title}>SIGN IN</h1>
+            <div>아직 계정이 없으신가요? <Link className={style.link} to="/signup">가입하기</Link></div>
+            <form className={style.form} onSubmit={confirmLogin}>
+                <input className={style.input}
                 type = "email"
                 id = "email"
                 name = "email"
@@ -67,7 +45,7 @@ const LoginPage = () => {
                 autoFocus 
                 onChange = {handleChange}
                 />
-                <input
+                <input className={style.input}
                 type = "password"
                 id = "password"
                 name = "password"
@@ -75,9 +53,9 @@ const LoginPage = () => {
                 value = {user.password}
                 onChange = {handleChange}
                 />
-                <button type="submit">로그인</button>
+                <button className={style.button} type="submit">로그인</button>
             </form>
-        </>
+        </div>
     );
 };
 
