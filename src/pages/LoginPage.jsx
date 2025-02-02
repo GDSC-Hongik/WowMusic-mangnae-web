@@ -2,7 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { login } from "../components/Auth";
 import style from "../components/LoginPage.module.css"
-
+import Footer from "../components/Footer";
 
 const LoginPage = () => {
     const navigate = useNavigate();
@@ -61,6 +61,7 @@ const LoginPage = () => {
                 <button className={style.button} type="submit">로그인</button>
             </form>
         </div>
+        <Footer />
         </div>
     );
 };
