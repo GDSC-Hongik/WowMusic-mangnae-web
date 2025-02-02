@@ -2,9 +2,9 @@
 
 
 .wrapper_signup {
-    background-color: black;
+    /* background-color: black; */
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
     position: absolute;
     top: 40%;
@@ -29,7 +29,7 @@
     line-height: 10px;
     
     box-sizing: border-box;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     
 }
 
@@ -49,16 +49,8 @@ p {
     box-sizing: border-box;
     /* border: 1px solid red; */
 
-    margin-top: 42px;
+    margin-top: 30px;
     
-}
-
-.wrapper_signup .wrapper__signup__input > div {
-    width: 294px;
-    height: 54px;
-
-    /* border: 1px solid blue; */
-    margin-bottom: 25px;
 }
 
 .wrapper__signup__input .wrapper_name {
@@ -73,10 +65,19 @@ p {
     margin-bottom: 20px;
 }
 
+.wrapper__signup__input .wrapper_pw_repeat {
+    margin-bottom: 20px;
+}
+
+.wrapper__signup__input .wrapper_date {
+    margin-bottom: 20px;
+}
+
 .wrapper__signup__input .name {
     width: 280px;
-    height: 54px;
-    background-color: black;
+    height: 50px;
+    background-color: #111;
+    color: white;
 
     border: 1px solid rgba(217, 217, 217, 1);
     border-radius: 5px;
@@ -84,8 +85,9 @@ p {
 
 .wrapper__signup__input .email {
     width: 280px;
-    height: 54px;
-    background-color: black;
+    height: 50px;
+    background-color: #111;
+    color: white;
 
     border: 1px solid rgba(217, 217, 217, 1);
     border-radius: 5px;
@@ -93,8 +95,9 @@ p {
 
 .wrapper__signup__input .pw {
     width: 280px;
-    height: 54px;
-    background-color: black;
+    height: 50px;
+    background-color: #111;
+    color: white;
 
     border: 1px solid rgba(217, 217, 217, 1);
     border-radius: 5px;
@@ -102,25 +105,38 @@ p {
 
 .wrapper__signup__input .pw_repeat {
     width: 280px;
-    height: 54px;
-    background-color: black;
+    height: 50px;
+    background-color: #111;
+    color: white;
 
     border: 1px solid rgba(217, 217, 217, 1);
     border-radius: 5px;
 }
 
 .wrapper__signup__input .birth {
-    color: black;
+    width: 280px;
+    height: 50px;
+    background-color: #111;
+    color: rgba(217, 217, 217, 1);
+
+    border: 1px solid rgba(217, 217, 217, 1);
+    border-radius: 5px;
+
+}
+
+.birth::-webkit-calendar-picker-indicator {
+    filter: invert(1); 
+    position: absolute;
+    right: 25px;
+    
 }
 
 .wrapper__signup__input .CreateAcount {
     border-radius: 3px;
     width: 294px;
     height: 53px;
-    background-color: rgba(176, 176, 176, 1);
+    background-color: rgba(58, 58, 58, 1);
     border: 1px solid rgba(231, 231, 231, 1);
 
     color: rgba(231, 231, 231, 1);
-
-
 }

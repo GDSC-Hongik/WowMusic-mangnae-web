@@ -18,7 +18,7 @@ const Header = () => {
         
             <button 
                 className="logIn"
-                onClick={()=>nav("/signup")}
+                onClick={()=>nav("/login")}
             >
                 log-in
             </button>

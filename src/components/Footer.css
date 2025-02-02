@@ -1,28 +1,33 @@
 .Footer {
-    background-color: black;
+    background-color: #111;
     width: 100%;
-    height: 22.5%;
+    height: 20%;
 
     display: flex;
-    position: fixed;
+    position:absolute;
     left: 0;
     bottom: 0;
 
     border-top: 1px solid rgba(119, 119, 119, 1);
 }
 
-.Footer .section1 {
-    /* border: 1px solid white; */
-    border-left: 1px solid white;
+.Footer > div {
+    border-left: 1px solid rgba(119, 119, 119, 1);
     width: 30%;
 }
 
 .Footer .section2 {
-    border-left: 1px solid white;
     width: 40%;
 }
 
-.Footer .section3 {
-    border-left: 1px solid white;
-    width: 30%;
+
+.Footer .section1 .to_insta {
+    padding-left: 20px;
+    color : white;
 }
+
+.Footer .section1 .to_youtube {
+    padding-left: 20px;
+    color : white;
+}
+

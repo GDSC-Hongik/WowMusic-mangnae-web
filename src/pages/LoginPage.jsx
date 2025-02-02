@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 const LoginPage = () => {
     return(
-        <button>
+        <button style={{padding: "50px"}}>
             <Link to="/signup">회원가입</Link>
         </button>
     );
