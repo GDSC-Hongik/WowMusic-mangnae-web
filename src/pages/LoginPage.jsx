@@ -32,6 +32,11 @@ const LoginPage = () => {
     }
 
     return(
+        <div style={{
+            backgroundColor: "#111",
+            minHeight: "100vh",
+            width: "100%",
+        }}>
         <div className={style.box}>
             <h1 className={style.title}>SIGN IN</h1>
             <div>아직 계정이 없으신가요? <Link className={style.link} to="/signup">가입하기</Link></div>
@@ -55,6 +60,7 @@ const LoginPage = () => {
                 />
                 <button className={style.button} type="submit">로그인</button>
             </form>
+        </div>
         </div>
     );
 };
