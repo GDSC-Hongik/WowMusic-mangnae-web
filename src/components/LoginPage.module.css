@@ -1,0 +1,76 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+
+.box{
+    display: flex;
+    width: 294px;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    color: #F2F1EF;
+    font-family: -apple-system, 
+        BlinkMacSystemFont, 
+        "Apple SD Gothic Neo", 
+        "Pretendard Variable", 
+        Pretendard, Roboto, 
+        "Noto Sans KR", 
+        "Segoe UI", 
+        "Malgun Gothic", 
+        "Apple Color Emoji", 
+        "Segoe UI Emoji", 
+        "Segoe UI Symbol", 
+        sans-serif;
+}
+
+.title{
+    color: #F2F1EF;
+    font-family: CHANEY;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 28.8px */
+    letter-spacing: -0.264px;
+}
+.link{
+    color:#FC9A7E;
+}
+.form {
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 28px 0 0;
+}
+
+.input{
+    margin: 14px 0;
+    height: 54px;
+    width: 294px;
+    color:#B0B0B0;
+    &:focus{
+        outline-color:#FDBBA9;
+    }
+    box-sizing: border-box;
+}
+
+.button{
+    margin: 28px 0 0;
+    box-sizing: border-box;
+    height: 54px;
+    width: 294px;
+    padding: 12px 105px;
+    color: #E7E7E7;
+    border-radius: 2px;
+    border: 1px solid var(--Neutral-70, #B0B0B0);
+    background: var(--Neutral-10, #3A3A3A);
+    &:hover{
+        border: 1px solid var(--Ellipse-23-300, #FC9A7E);
+        background: var(--Neutral-10, #3A3A3A);
+        color:#FC9A7E;
+    }
+    &:active{
+        border: 1px solid var(--Ellipse-23-500, #FA5628);
+        background: var(--Neutral-10, #3A3A3A);
+        color:#FA5628;
+    }
+}
