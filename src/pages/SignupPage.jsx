@@ -5,7 +5,13 @@ import Footer from "../components/Footer";
 
 const SignUpPage = () => {
     return (
-        <div style={{backgroundColor: "black", minHeight: "100vh", maxWidth: "100vw"}}>
+        <div style={{
+            backgroundColor: "#111", 
+            minHeight: "100vh", 
+            width: "100%",
+            
+            }}
+        >
             <Header />
 
             <Info />
@@ -14,6 +20,5 @@ const SignUpPage = () => {
 
         </div>
     )
-}
-
+};
 export default SignUpPage;

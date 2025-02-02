@@ -8,20 +8,20 @@
     height: 6%;
 
     border-bottom: 1px solid rgba(119, 119, 119, 1);
-    background-color: black;
+    background-color: #111;
 }
 
 
 .Header button {
     border-radius: 0;
     text-align: center;
+    height: 30px;
 }
 
 .Header .logo {
     width: 126px;
-    height: 38px; 
 
-    background-color: black;
+    background-color: #111;
     color: white;
     border: 1px solid white;
 
@@ -33,20 +33,18 @@
 
 .Header .playlist {
     width: 98px;
-    height: 38px;
 
-    background-color: black;
+    background-color: #111;
     color: white;
     border: 1px solid white;
 
     position: absolute;
     top : 9px;
-    left: 87.5%;
+    left: 85%;
 }
 
 .Header .logIn {
     width: 103px;
-    height: 38px;
 
     background-color: white;
     color: black;
@@ -54,7 +52,7 @@
 
     position: absolute;
     top : 9px;
-    left: 93.5%;
+    left: 92%;
 }
 
 

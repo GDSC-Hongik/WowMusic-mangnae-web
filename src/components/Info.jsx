@@ -9,6 +9,7 @@ const Info = () => {
     const [nameValue, setName] = useState('');
     const [emailValue, setEmail] = useState('');
     const [pwValue, setPw] = useState('');
+    // const [pwrValue, setPwr] = useState('');
     const [birthValue, setBirth] = useState('');
 
 
@@ -28,6 +29,11 @@ const Info = () => {
         console.log(e.target.value)
     }
 
+    // const saveUserPwr = (e) => {
+    //     setPwr(e.target.value);
+    //     console.log(e.target.value)
+    // }
+
     const saveUserBirth = (e) => {
         setBirth(e.target.value);
         console.log(e.target.value)
@@ -37,14 +43,15 @@ const Info = () => {
         e.preventDefault();
 
         const userData = {
-            name : nameValue,
+            username : nameValue,
             email: emailValue,
             password: pwValue,
+            // password_repeat: pwrValue,
             birth: birthValue,
         };
 
         try {
-            const response = await fetch('http://127.0.0.1:8000/users/signup', {
+            const response = await fetch('http://192.168.212.15:8000/api/users/signup/', {
                 method: 'POST',
                 headers: {
                     'Content-Type' : 'application/json',
@@ -55,7 +62,7 @@ const Info = () => {
             if (response.ok) {
                 const data = await response.json();
                 console.log("회원가입 성공 : ", data);
-
+                nav("/login");
             }
             else {
                 const errorData = await response.json();
@@ -116,14 +123,17 @@ const Info = () => {
                         <input 
                             type="password" 
                             placeholder="password repeat"
-                            className="pw_repeat" 
+                            className="pw_repeat"
+                            // value={pwrValue}
+                            // onChange={saveUserPwr} 
                         />
                     </div>
 
                     <div className="wrapper_date">
                         <input 
                             type="date"
-                            className="createdDate" 
+                            className="birth" 
+                            
                             value={birthValue}
                             onChange={saveUserBirth}
                         />
