@@ -9,8 +9,11 @@ const Info = () => {
     const [nameValue, setName] = useState('');
     const [emailValue, setEmail] = useState('');
     const [pwValue, setPw] = useState('');
-    // const [pwrValue, setPwr] = useState('');
+    const [pwrValue, setPwr] = useState('');
     const [birthValue, setBirth] = useState('');
+
+    const [pwError, setPwError] = useState('');
+    const [pwrError, setPwrError] = useState('');
 
 
     const saveUserName = (e) => {
@@ -25,18 +28,43 @@ const Info = () => {
 
 
     const saveUserPw = (e) => {
-        setPw(e.target.value);
-        console.log(e.target.value)
-    }
+        const {name, value} = e.target;
 
-    // const saveUserPwr = (e) => {
-    //     setPwr(e.target.value);
-    //     console.log(e.target.value)
-    // }
+        if (name === "pw") {
+            setPw(value);
+            console.log(value);
+            passwordCheckHandler(value, pwrValue);
+        }
+        else {
+            setPwr(value);
+            console.log(value);
+            passwordCheckHandler(pwValue, value);
+        }
+    }
 
     const saveUserBirth = (e) => {
         setBirth(e.target.value);
         console.log(e.target.value)
+    }
+
+    const passwordCheckHandler = (pw, pwr) => {
+        // const pwRegex = "^[a-z\d!@*&-_]{8,16}$";
+
+        if (pw === '') {
+            setPwError("비밀번호를 입력해주세요.");
+            return false;
+        }
+        else if (pwr !== pw) {
+            setPwError('');
+            setPwrError("비밀번호가 일치하지 않습니다.");
+            return false;
+        }
+        else {
+            setPwError('');
+            setPwrError('');
+            return true;
+        }
+        
     }
 
     const handleSubmit = async (e) => {
@@ -46,7 +74,6 @@ const Info = () => {
             username : nameValue,
             email: emailValue,
             password: pwValue,
-            // password_repeat: pwrValue,
             birth: birthValue,
         };
 
@@ -114,9 +141,11 @@ const Info = () => {
                             type="password" 
                             placeholder="password"
                             className="pw" 
+                            name="pw"
                             value={pwValue}
                             onChange={saveUserPw}
                         />
+                        {pwError && <small style={{color: "white"}}>{pwError}</small>}
                     </div>
                     
                     <div className="wrapper_pw_repeat">
@@ -124,9 +153,11 @@ const Info = () => {
                             type="password" 
                             placeholder="password repeat"
                             className="pw_repeat"
-                            // value={pwrValue}
-                            // onChange={saveUserPwr} 
+                            name="pwr"
+                            value={pwrValue}
+                            onChange={saveUserPw} 
                         />
+                        {pwrError && <small style={{color: "white"}}>{pwrError}</small>}
                     </div>
 
                     <div className="wrapper_date">

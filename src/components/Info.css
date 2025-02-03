@@ -2,12 +2,10 @@
 
 
 .wrapper_signup {
-    /* background-color: black; */
     box-sizing: border-box;
-    /* border: 1px solid red; */
 
     position: absolute;
-    top: 40%;
+    top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -45,6 +43,8 @@ p {
     font-weight: regular;
 }
 
+
+
 .wrapper_signup .wrapper__signup__input {
     box-sizing: border-box;
     /* border: 1px solid red; */
@@ -53,81 +53,29 @@ p {
     
 }
 
-.wrapper__signup__input .wrapper_name {
+.wrapper__signup__input div {
     margin-bottom: 20px;
 }
 
-.wrapper__signup__input .wrapper_email {
-    margin-bottom: 20px;
-}
-
-.wrapper__signup__input .wrapper_pw {
-    margin-bottom: 20px;
-}
-
-.wrapper__signup__input .wrapper_pw_repeat {
-    margin-bottom: 20px;
-}
-
-.wrapper__signup__input .wrapper_date {
-    margin-bottom: 20px;
-}
-
-.wrapper__signup__input .name {
-    width: 280px;
-    height: 50px;
+.wrapper__signup__input input {
     background-color: #111;
     color: white;
 
     border: 1px solid rgba(217, 217, 217, 1);
     border-radius: 5px;
-}
 
-.wrapper__signup__input .email {
-    width: 280px;
-    height: 50px;
-    background-color: #111;
-    color: white;
-
-    border: 1px solid rgba(217, 217, 217, 1);
-    border-radius: 5px;
-}
-
-.wrapper__signup__input .pw {
-    width: 280px;
-    height: 50px;
-    background-color: #111;
-    color: white;
-
-    border: 1px solid rgba(217, 217, 217, 1);
-    border-radius: 5px;
-}
-
-.wrapper__signup__input .pw_repeat {
-    width: 280px;
-    height: 50px;
-    background-color: #111;
-    color: white;
-
-    border: 1px solid rgba(217, 217, 217, 1);
-    border-radius: 5px;
-}
-
-.wrapper__signup__input .birth {
-    width: 280px;
-    height: 50px;
-    background-color: #111;
-    color: rgba(217, 217, 217, 1);
-
-    border: 1px solid rgba(217, 217, 217, 1);
-    border-radius: 5px;
-
+    height: 54px;
+    width: 294px;
+    &:focus{
+        outline-color:#FDBBA9;
+    }
+    box-sizing: border-box;
 }
 
 .birth::-webkit-calendar-picker-indicator {
     filter: invert(1); 
     position: absolute;
-    right: 25px;
+    right: 18px;
     
 }
 
@@ -139,4 +87,15 @@ p {
     border: 1px solid rgba(231, 231, 231, 1);
 
     color: rgba(231, 231, 231, 1);
+
+    &:hover{
+        border: 1px solid var(--Ellipse-23-300, #FC9A7E);
+        background: var(--Neutral-10, #3A3A3A);
+        color:#FC9A7E;
+    }
+    &:active{
+        border: 1px solid var(--Ellipse-23-500, #FA5628);
+        background: var(--Neutral-10, #3A3A3A);
+        color:#FA5628;
+    }
 }
