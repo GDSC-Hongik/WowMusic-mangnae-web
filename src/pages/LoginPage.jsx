@@ -16,7 +16,7 @@ const LoginPage = () => {
         try{
             const { email, password } = user;
 
-            const result = await login({email, password});
+            const result = await login({email, password}, navigate);
             if(result){
                 alert("로그인 성공");
                 navigate('/');
