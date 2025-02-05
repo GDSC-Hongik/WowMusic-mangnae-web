@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { login } from "../components/Auth";
 import style from "../components/LoginPage.module.css"
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 const LoginPage = () => {
     const navigate = useNavigate();
@@ -37,6 +38,7 @@ const LoginPage = () => {
             minHeight: "100vh",
             width: "100%",
         }}>
+        <Header />
         <div className={style.box}>
             <h1 className={style.title}>SIGN IN</h1>
             <div>아직 계정이 없으신가요? <Link className={style.link} to="/signup">가입하기</Link></div>

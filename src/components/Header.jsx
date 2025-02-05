@@ -1,23 +1,23 @@
 import React from "react";
 import {useNavigate} from "react-router-dom";
-import "./Header.css";
+import style from "./Header.module.css"
 
 const Header = () => {
     const nav = useNavigate();
 
     return (
-        <header className="Header">
+        <header className={style.Header}>
             <button 
                 onClick={()=>nav("/")}
-                className="logo"
+                className={style.logo}
             >
                 logo
             </button>
     
-            <button className="playlist">myplaylist</button>
+            <button className={style.playlist}>myplaylist</button>
         
             <button 
-                className="logIn"
+                className={style.logIn}
                 onClick={()=>nav("/login")}
             >
                 log-in
