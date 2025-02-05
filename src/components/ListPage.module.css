@@ -4,4 +4,27 @@
     background-color: #F2F1EF;
     background-size:cover;
     margin:0%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ul{
+    padding: 0 3%;
+    position: relative;
+    top: 30%;
+}
+
+.list{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 55%;
+
+    color: #111;
+    font-family: CHANEY;
+    font-size: 48px;
+    &:hover{
+        color:#FA5628;
+        transition: 0.5s;
+    }
 }
