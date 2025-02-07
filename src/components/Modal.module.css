@@ -32,7 +32,7 @@ header {
 
 .modal{
     display: flex;
-    height: 383px;
+    height: 320px;
     padding: 68px 118px;
     flex-direction: column;
     align-items: center;

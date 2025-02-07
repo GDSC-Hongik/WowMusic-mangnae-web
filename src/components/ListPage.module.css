@@ -11,13 +11,14 @@
 .ul{
     padding: 0 3%;
     position: relative;
-    top: 30%;
+    top: 35%;
 }
 
 .list{
     list-style-type: none;
     display: flex;
     align-items: center;
+    
     height: 55%;
 
     color: #111;
