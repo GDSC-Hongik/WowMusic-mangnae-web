@@ -8,17 +8,26 @@
     flex-direction: column;
 }
 
+.upperbox{
+    padding: 5% 3% 0 0;
+}
+
+.x{
+    width: 50px;
+    display: flex;
+    float: right;
+}
+
 .ul{
     padding: 0 3%;
     position: relative;
-    top: 35%;
+    top: 25%;
 }
 
 .list{
     list-style-type: none;
     display: flex;
     align-items: center;
-    display: flex;
     justify-content: space-between;
     
     
