@@ -8,16 +8,29 @@
     flex-direction: column;
 }
 
+.upperbox{
+    padding: 5% 3% 0 0;
+}
+
+.x{
+    width: 50px;
+    display: flex;
+    float: right;
+}
+
 .ul{
     padding: 0 3%;
     position: relative;
-    top: 30%;
+    top: 25%;
 }
 
 .list{
     list-style-type: none;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    
+    
     height: 55%;
 
     color: #111;
@@ -27,4 +40,9 @@
         color:#FA5628;
         transition: 0.5s;
     }
+}
+
+.img{
+    width:40px;
+    height: 40px;
 }

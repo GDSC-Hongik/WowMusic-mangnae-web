@@ -1,0 +1,71 @@
+.Foo{
+    position : absolute;
+    bottom: 0px;
+    left:0px;
+    width: 100%;
+    height: 120px;
+    padding : 15px;
+}
+
+.content{
+    border-top: 1px solid #777;
+    padding: 20px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    color: var(--Neutral-80, #D1D1D1);
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 16.8px */
+    letter-spacing: -0.154px;
+}
+
+.mid{
+    border-bottom: 1px solid #777;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button{
+    display: flex;
+    width: 108px;
+    height: 36px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0; 
+
+    border-radius: 2px;
+    border: 1px solid var(--Neutral-70, #B0B0B0);
+    background: var(--Neutral-10, #3A3A3A);
+
+    color: var(--Neutral-90, #E7E7E7);
+    font-family: Pretendard;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 28.6px */
+    letter-spacing: -0.242px;
+    &:hover{
+        border: 1px solid var(--Ellipse-23-300, #FC9A7E);
+        background: var(--Neutral-10, #3A3A3A);
+        color:#FC9A7E;
+        transition: 0.5s;
+    }
+    &:active{
+        border: 1px solid var(--Ellipse-23-500, #FA5628);
+        background: var(--Neutral-10, #3A3A3A);
+        color:#FA5628;
+        transition: 0s;
+    }
+}
