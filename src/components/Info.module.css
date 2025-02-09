@@ -3,6 +3,7 @@
 
 .wrapper_signup {
     box-sizing: border-box;
+    /* border: 1px solid red; */
 
     position: absolute;
     top: 42%;
@@ -11,7 +12,7 @@
 
 }
 
-.wrapper_signup .wrapper__signup__text {
+.wrapper__signup__text {
     font-family: -apple-system, 
         BlinkMacSystemFont, 
         "Apple SD Gothic Neo", 
@@ -24,22 +25,24 @@
         "Segoe UI Emoji", 
         "Segoe UI Symbol", 
         sans-serif;
-    line-height: 10px;
+    line-height: 28px;
     
     box-sizing: border-box;
     /* border: 1px solid white; */
+   
     
 }
 
 h2 {
     color: white;
-    font-size: 24px;
+    font-family: 'Chaney';
+    font-size: 32px;
     font-weight: bolder;
 }
 
 p {
     color: white;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: regular;
 }
 
@@ -47,8 +50,6 @@ p {
 
 .wrapper_signup .wrapper__signup__input {
     box-sizing: border-box;
-    /* border: 1px solid red; */
-
     margin-top: 30px;
     
 }

@@ -2,15 +2,22 @@
 import React from "react";
 import {Link} from "react-router-dom"
 import Header from "../components/Header";
+import Footer from "../components/Footer";
+import MainView from "../components/MainView";
 
 const HomePage = () => {
     return(
-        <div>
+        <div style={{
+            backgroundColor: "#111", 
+            minHeight: "100vh", 
+            width: "100%",
+            
+            }}>
             <Header />
-            <h1>홈페이지입니다.</h1>
-            <button>
-              <Link to="/List">Find out</Link>
-            </button>
+
+            <MainView />
+
+            {/* <Footer /> */}
         </div>
     )
 }
