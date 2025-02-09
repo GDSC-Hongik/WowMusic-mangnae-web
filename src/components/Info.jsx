@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { useNavigate } from "react-router-dom";
-import "./Info.css"
+import style from "./Info.module.css"
 
 const Info = () => {
 
@@ -108,39 +108,39 @@ const Info = () => {
 
     return (
         <>
-        <div className="wrapper_signup">
-            <div className="wrapper__signup__text">
+        <div className={style.wrapper_signup}>
+            <div className={style.wrapper__signup__text}>
                 <h2>SIGN UP</h2>
                 <p>계정을 생성하기 위해 정보를 입력해주세요</p>
             </div>
 
-            <div className="wrapper__signup__input">
+            <div className={style.wrapper__signup__input}>
                 <form onSubmit={handleSubmit}>
-                    <div className="wrapper_name">
+                    <div className={style.wrapper_name}>
                         <input 
                             type="text" 
                             placeholder="name"
-                            className="name" 
+                            className={style.name} 
                             value={nameValue}
                             onChange={saveUserName}
                         />
                     </div>
                     
-                    <div className="wrapper_email">
+                    <div className={style.wrapper_email}>
                         <input 
                             type="text" 
                             placeholder="email"
-                            className="email" 
+                            className={style.email}
                             value={emailValue}
                             onChange={saveUserEmail}
                         />
                     </div>
                     
-                    <div className="wrapper_pw">
+                    <div className={style.wrapper_pw}>
                         <input 
                             type="password" 
                             placeholder="password"
-                            className="pw" 
+                            className={style.pw} 
                             name="pw"
                             value={pwValue}
                             onChange={saveUserPw}
@@ -148,11 +148,11 @@ const Info = () => {
                         {pwError && <small style={{color: "white"}}>{pwError}</small>}
                     </div>
                     
-                    <div className="wrapper_pw_repeat">
+                    <div className={style.wrapper_pw_repeat}>
                         <input 
                             type="password" 
                             placeholder="password repeat"
-                            className="pw_repeat"
+                            className={style.pw_repeat}
                             name="pwr"
                             value={pwrValue}
                             onChange={saveUserPw} 
@@ -160,10 +160,10 @@ const Info = () => {
                         {pwrError && <small style={{color: "white"}}>{pwrError}</small>}
                     </div>
 
-                    <div className="wrapper_date">
+                    <div className={style.wrapper_date}>
                         <input 
                             type="date"
-                            className="birth" 
+                            className={style.birth} 
                             
                             value={birthValue}
                             onChange={saveUserBirth}
@@ -172,9 +172,9 @@ const Info = () => {
                 
 
                     <button 
-                        className="CreateAcount"
+                        className={style.CreateAcount}
                         type="submit"
-                        // onClick={()=>nav("/")}
+                        
                     >
                         Create Acount
                     </button>
