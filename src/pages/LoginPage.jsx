@@ -2,7 +2,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { login } from "../components/Auth";
 import style from "../components/LoginPage.module.css"
-
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 const LoginPage = () => {
     const navigate = useNavigate();
@@ -16,7 +17,7 @@ const LoginPage = () => {
         try{
             const { email, password } = user;
 
-            const result = await login({email, password});
+            const result = await login({email, password}, navigate);
             if(result){
                 alert("로그인 성공");
                 navigate('/');
@@ -37,6 +38,7 @@ const LoginPage = () => {
             minHeight: "100vh",
             width: "100%",
         }}>
+        <Header />
         <div className={style.box}>
             <h1 className={style.title}>SIGN IN</h1>
             <div>아직 계정이 없으신가요? <Link className={style.link} to="/signup">가입하기</Link></div>
@@ -61,6 +63,7 @@ const LoginPage = () => {
                 <button className={style.button} type="submit">로그인</button>
             </form>
         </div>
+        <Footer />
         </div>
     );
 };
