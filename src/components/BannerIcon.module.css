@@ -1,0 +1,88 @@
+.wrapper {
+    color: white;
+    width: 483px;
+    height: 205px;
+    margin: 5px;
+    flex: none;
+
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-name: move-ease-in;
+    animation-timing-function: ease-in;
+
+}
+
+.wrapper:last-child {
+    flex-grow: 1;
+    min-width: 0;
+}
+
+@keyframes move-ease-in {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.wrapper_text {
+    width: 483px;
+    height: 153px;
+    border: 1px solid rgba(136, 136, 136, 1);
+    background-color: rgba(58, 58, 58, 1);
+    position: absolute;
+    bottom: 0;
+}
+
+.wrapper_info {
+    position: absolute;
+    right: 10px;
+    width: 250px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: regular;
+    font-size: 14px;
+
+    
+}
+
+.wrapper_link {
+    margin-top: 40px;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 14px;
+}
+
+.song_title {
+    color: white;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.song_singer {
+    color : white;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: regular;
+    font-size: 16px;
+}
+
+.Subtract {
+    width: 187px;
+    height: 187px;
+
+    float: left;
+    position: relative;
+    top: -30%;
+    left: 22px;
+}

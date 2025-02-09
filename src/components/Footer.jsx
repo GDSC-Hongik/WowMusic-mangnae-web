@@ -1,16 +1,16 @@
 import React from "react";
-import "./Footer.css";
+import style from "./Footer.module.css";
 import { Link } from "react-router-dom";
 
 
 const Footer = () => {
     return (
-        <footer className="Footer">
-            <div className="section1">
+        <footer className={style.Footer}>
+            <div className={style.section1}>
                 
                     <Link 
                         to="https://www.naver.com/"
-                        className="to_insta"
+                        className={style.to_insta}
                     >
                         INSTAGRAM
                     </Link>
@@ -18,7 +18,7 @@ const Footer = () => {
 
                     <Link 
                         to="https://www.naver.com/"
-                        className="to_youtube"
+                        className={style.to_youtube}
                     >
                         YOUTUBE
                     </Link>
@@ -26,11 +26,11 @@ const Footer = () => {
                 
             </div>
 
-            <div className="section2">
+            <div className={style.section2}>
 
             </div>
 
-            <div className="section3">
+            <div className={style.section3}>
 
             </div>
         </footer>
