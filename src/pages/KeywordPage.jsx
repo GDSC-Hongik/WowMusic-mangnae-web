@@ -9,7 +9,10 @@ import bstyle from '../components/TestButton.module.css';
 const KeywordPage = () =>{
     const [modalOpened, setModalOpened] = useState(true);
     const [step, setStep] = useState(1);
-    const [clicked, setClicked] = useState(false); //pressed 효과 만들기기
+    const [clicked, setClicked] = useState(''); //pressed 효과 만들기
+    const handleClick = (bnt) =>{
+        setClicked(bnt);
+    }
     const modalClose = () =>{
         setModalOpened(false);
     }
@@ -49,7 +52,7 @@ const KeywordPage = () =>{
                     <div className={style.bntbox}>
                         <div className={style.buttons}>
                             {menu_list[step - 1].buttons.map((it) => (
-                                <button className={bstyle.button}>{it}</button>
+                                <button onClick={() => handleClick(it)} className={clicked === it ? bstyle.act : bstyle.button}>{it}</button>
                             ))}
                         </div>
                     </div>

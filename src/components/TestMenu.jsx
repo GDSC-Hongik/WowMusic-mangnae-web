@@ -17,7 +17,7 @@ const TestMenu = ({step, setStep}) =>{
                 <div className={style.content}>
                     {menu_list.map((it) =>(
                         step >= it.id &&(
-                            <div onClick={() => handleStep(it.id)} className={style.box}>{it.title}</div>
+                            <div onClick={() => handleStep(it.id)} className={ it.id === step ? style.focus : style.box}>{it.title}</div>
                         )
                     ))}
                 </div>
