@@ -13,7 +13,7 @@ const KeywordPage = () =>{
     const handleClick = (bnt) =>{
         setClicked(bnt);
     }
-    const modalClose = () =>{
+    const modalClose = () => {
         setModalOpened(false);
     }
 
@@ -44,7 +44,7 @@ const KeywordPage = () =>{
                         <div>
                             <div className={style.chatbox}>
                                 {menu_list[step - 1].message.map((it) => (
-                                    <p className={style.chat}>{it}</p>
+                                    <p key={it} className={style.chat}>{it}</p>
                                 ))}
                             </div>
                         </div>
@@ -52,7 +52,7 @@ const KeywordPage = () =>{
                     <div className={style.bntbox}>
                         <div className={style.buttons}>
                             {menu_list[step - 1].buttons.map((it) => (
-                                <button onClick={() => handleClick(it)} className={clicked === it ? bstyle.act : bstyle.button}>{it}</button>
+                                <button key={it} onClick={() => handleClick(it)} className={clicked === it ? bstyle.act : bstyle.button}>{it}</button>
                             ))}
                         </div>
                     </div>
@@ -60,7 +60,7 @@ const KeywordPage = () =>{
 
                 <Modal modalOpened={modalOpened} modalClose={modalClose} min={2} size={menu_list.length} />
 
-                <TestFooter size={menu_list.length} handleNext={() => handleStep(step + 1)} />
+                <TestFooter step={step} size={menu_list.length} handleNext={() => handleStep(step + 1)} />
             </div>
         </>
     )
