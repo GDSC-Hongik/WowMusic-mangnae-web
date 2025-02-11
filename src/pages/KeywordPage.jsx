@@ -36,8 +36,7 @@ const KeywordPage = () =>{
             setStep(newStep);
             setClicked(submitArr[menu_list[newStep - 1].name])
             resetTyping();
-        }
-        else{
+        } else{
             console.log(submitArr);
             nav('/kResult', {state: {submitArr}});
         }
@@ -114,7 +113,7 @@ const KeywordPage = () =>{
 
                 <Modal modalOpened={modalOpened} modalClose={modalClose} min={2} size={menu_list.length} />
 
-                <TestFooter step={step} size={menu_list.length} handleNext={() => handleStep(step + 1)} />
+                <TestFooter step={step} size={menu_list.length} handleNext={() => handleStep(clicked===''? step : step + 1)} />
             </div>
         </>
     )
