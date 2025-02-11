@@ -33,3 +33,19 @@ export const logout = (navigate) =>{
 export const isAuthenticated = () => {
     return !!localStorage.getItem("token"); //토큰이 있으면 로그인 상태
 }
+
+export const listData = async ({keyword}) => {
+    try{
+        const res = await api.get("/song_by_keywords/", {
+            keywords: keyword.one,
+            keywords: keyword.two,
+            keywords: keyword.three,
+            keywords: keyword.four,
+        });
+        return res.data;
+    }
+    catch (error){
+        console.log("플레이리스트 전송 실패: ", error);
+        throw error;
+    }
+}

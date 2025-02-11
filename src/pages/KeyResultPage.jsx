@@ -1,8 +1,11 @@
-import {useLocation} from 'react-router-dom'
+import {useLocation} from 'react-router-dom';
+import { listData } from '../components/Auth';
 
 const KeyResultPage = () => {
     const location = useLocation();
     const keywords = location.state?.submitArr;
+    const playList = listData({keywords});
+    console.log(playList);
     
     return(
         <>
