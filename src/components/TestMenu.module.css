@@ -29,9 +29,21 @@
     align-items: center;
     flex-shrink: 0;
     align-self: stretch;
-    &:visited{
+    padding: 5px;
+    &:hover{
         border-radius: 2px;
         background: var(--Neutral-10, #3A3A3A);
-        transition: 0s;
+        transition: 0.5s;
     }
+}
+
+.focus{
+    display: flex;
+    height: 37px;
+    align-items: center;
+    flex-shrink: 0;
+    align-self: stretch;
+    padding: 5px;
+    border-radius: 2px;
+    background: var(--Neutral-10, #3A3A3A);
 }
