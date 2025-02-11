@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react';
+import {useNavigate} from 'react-router-dom'
 import Header from '../components/Header.jsx';
 import Modal from '../components/Modal';
 import TestFooter from '../components/TestFooter';
@@ -7,6 +8,7 @@ import style from '../components/KeywordPage.module.css';
 import bstyle from '../components/TestButton.module.css';
 
 const KeywordPage = () =>{
+    const nav = useNavigate();
     const [modalOpened, setModalOpened] = useState(true); // 모달창
     const [step, setStep] = useState(1); // 현재 페이지
     const [clicked, setClicked] = useState(''); // pressed 효과 만들기
@@ -37,6 +39,7 @@ const KeywordPage = () =>{
         }
         else{
             console.log(submitArr);
+            nav('/kResult', {state: {submitArr}});
         }
         console.log(step);
     }
