@@ -16,11 +16,10 @@
     margin:auto;
     width: 55%;
     
-    
     justify-content: space-between;
     flex-direction: column;
     align-items: flex-start;
-    gap: 220px;
+    gap: 320px;
 }
 
 .upperbox{
@@ -31,7 +30,17 @@
 .pro{
     width: 25px;
 }
+
 .chatbox{
+    max-height: 0px;
+    
+    display: flex;
+    flex-direction: column; /* ✅ 문장을 세로로 정렬 */
+    gap: 15px; /* ✅ 문장 사이 여백 추가 */
+    align-items:flex-start; /* ✅ 중앙 정렬 */
+}
+
+.chat{
     border-radius: 2px;
     background: var(--Neutral-100, #3A3A3A);
     padding: 12px 32px;
@@ -44,28 +53,9 @@
     font-weight: 600;
     line-height: 120%; /* 28.8px */
     letter-spacing: -0.264px;
+    width: fit-content; /* ✅ 텍스트 길이에 맞게 조절 */
 }
 
-.chat{
-    border-right: 2px solid white; /* 커서 효과 */
-    white-space: nowrap; /* 한 줄 유지 */
-    overflow: hidden; /* 넘치는 글자 숨김 */
-    width: 0; /* 초기 너비 */
-    animation: typing 2s steps(30, end) forwards, blink 0.5s infinite;
-}
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
-}
 
 .bntbox{
     display: flex;
