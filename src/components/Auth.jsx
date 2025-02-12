@@ -34,14 +34,17 @@ export const isAuthenticated = () => {
     return !!localStorage.getItem("token"); //토큰이 있으면 로그인 상태
 }
 
-export const listData = async ({keyword}) => {
+export const listData = async ({keywords, setLoading}) => {
     try{
         const res = await api.get("/song_by_keywords/", {
-            keywords: keyword.one,
-            keywords: keyword.two,
-            keywords: keyword.three,
-            keywords: keyword.four,
+            params:{
+                keywords: keywords.one,
+                keywords: keywords.two,
+                keywords: keywords.three,
+                keywords: keywords.four,
+            }
         });
+        setLoading(false);
         return res.data;
     }
     catch (error){
