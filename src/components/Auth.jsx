@@ -36,12 +36,10 @@ export const isAuthenticated = () => {
 
 export const listData = async ({keywords, setLoading}) => {
     try{
-        const res = await api.get("/song_by_keywords/", {
+        const res = await api.get("/keywords/result/", {
             params:{
-                keywords: keywords.one,
-                keywords: keywords.two,
-                keywords: keywords.three,
-                keywords: keywords.four,
+                keyword1: keywords.one,
+                keyword2: keywords.two,
             }
         });
         setLoading(false);

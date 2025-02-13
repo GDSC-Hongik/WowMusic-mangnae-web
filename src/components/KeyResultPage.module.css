@@ -1,0 +1,8 @@
+.back{
+    background: #111;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    color:white;
+    display: flex;
+}
