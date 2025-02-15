@@ -1,4 +1,4 @@
-import style from "./BannerIcon.module.css";
+import style from './BannerIcon.module.css';
 import { Link } from "react-router-dom";
 
 const BannerIcon = ({title, singer, content, onClick}) => {

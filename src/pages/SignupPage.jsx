@@ -9,12 +9,17 @@ const SignUpPage = () => {
             backgroundColor: "#111", 
             minHeight: "100vh", 
             width: "100%",
+
+            display: "flex",
+            flexDirection: "column",
             
             }}
         >
             <Header />
 
-            <Info />
+            <div style={{ flex: 1 }}>
+                <Info />
+            </div>
 
             <Footer />
 
