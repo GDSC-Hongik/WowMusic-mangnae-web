@@ -11,13 +11,18 @@ const HomePage = () => {
             backgroundColor: "#111", 
             minHeight: "100vh", 
             width: "100%",
+            display: "flex",
+            flexDirection: "column",
             
             }}>
             <Header />
 
-            <MainView />
+            <MainView style={{
+                flex: 1
+            }
+            }/>
 
-            {/* <Footer /> */}
+            <Footer />
         </div>
     )
 }

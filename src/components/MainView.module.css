@@ -1,6 +1,3 @@
-@keyframes slidein {
-    
-}
 
 .wrapper_title {
     box-sizing: border-box;
@@ -127,7 +124,6 @@ span {
 }
 
 .Info {
-    /* border: 1px solid red; */
     line-height: 300%;
     letter-spacing: -0.011em;
     text-align: center;
@@ -152,6 +148,7 @@ span {
     height: 230px;
     
     margin-top: 200px;
+    margin-bottom: 150px;
     width: 100%;
     position: relative;
 
@@ -160,3 +157,156 @@ span {
     overflow: hidden;    
 }
 
+.wrapper_test {
+    height: 684px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper_test_title {
+    color: white;
+    width: 40%;
+
+}
+
+.wrapper_test_title p {
+    margin-top: 40%;
+    margin-left: 20px;
+
+    font-family: 'Pretendard';
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.wrapper_test_type {
+    color: rgba(231, 231, 231, 1);
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+
+}
+
+.section1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.text {
+    background-color: rgba(250, 86, 40, 0.2);
+    color: rgba(250, 86, 40, 1);
+
+    font-family: 'Chaney';
+    font-size: 14px;
+    line-height: 140%;
+    padding: 5px 10px;
+    display: inline-block;
+
+    /* position: relative; */
+    margin: 20px;
+}
+
+.wrapper_test_type p {
+    text-align: left;
+    margin-left: 20px;
+
+    font-family: 'Pretendard';
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+
+.wrapper_keyword {
+    width: 359px;
+    height: 228px;
+    margin: 6px;
+
+    background-color: rgba(58, 58, 58, 1);
+    border: 1px solid rgba(136, 136, 136, 1);
+}
+
+.wrapper_fortune {
+    width: 483px;
+    height: 228px;
+    margin: 6px;
+
+    background-color: rgba(58, 58, 58, 1);
+    border: 1px solid rgba(136, 136, 136, 1);
+}
+
+.wrapper_mbti {
+    width: 854px;
+    height: 223px;
+    margin-top: 10px;
+    
+    background-color: rgba(58, 58, 58, 1);
+    border: 1px solid rgba(136, 136, 136, 1);
+}
+
+.keyword_box {
+    width: 96px;
+    height: 103px;
+    background-color: rgba(217, 217, 217, 1);
+
+    position: relative;
+
+    margin-left: 230px;
+    margin-top: 25px;
+}
+
+.fortune_box {
+    width: 135px;
+    height: 226px;
+    background-color: rgba(217, 217, 217, 1);
+
+    margin-left: 325px;
+    margin-top: -98px;
+}
+
+.wrapper_box {
+    width: 40%;
+    height: 150px;
+    position: relative;
+    margin-left: 70%;
+    margin-top: -27px;
+
+    flex: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper_box div {
+    width: 87px;
+    height: 178px;
+
+    margin-top: 15px;
+
+    -ms-transform: skew(0deg, -20deg);
+    -webkit-transform: skew(0deg, -20deg);
+    transform: skew(0deg, -20deg);
+}
+
+.mbti_box1 {
+    z-index: 1;
+    margin-right: -40px;
+
+    background-color: rgba(217, 217, 217, 1);
+}
+
+.mbti_box2 {
+    z-index: 2;
+    margin-right: -25px;
+
+    background-color: rgba(217, 217, 217, 0.9);
+}
+
+.mbti_box3 {
+    z-index: 1;
+    background-color: rgba(217, 217, 217, 0.8);
+}

@@ -6,6 +6,7 @@ import BannerIcon from "./BannerIcon";
 
 const MainView = () => {
     const nav = useNavigate();
+
     return (
         <>
         <div className={style.wrapper}>
@@ -68,7 +69,7 @@ const MainView = () => {
             <BannerIcon 
                 title={"Winter Poem"}
                 singer={"뎁트"}
-                content={"서정적인 멜로디와 서사 깊은 가사로 영화를 좋아하는 취향과 어울려요"}
+                content={"서정적인 멜로디와 서사 깊은 가사로 영화를 좋아하는 취향과 어울려요."}
             />
 
             <BannerIcon 
@@ -89,18 +90,58 @@ const MainView = () => {
                 content={"어울려요"}
             />
 
-<BannerIcon 
+            <BannerIcon 
                 title={"Winter Poem"}
                 singer={"뎁트"}
                 content={"어울려요"}
             />
 
-<BannerIcon 
+            <BannerIcon 
                 title={"Winter Poem"}
                 singer={"뎁트"}
                 content={"어울려요"}
             />
 
+        </div>
+
+        <div className={style.wrapper_test}>
+            <div className={style.wrapper_test_title}>
+                <p>간단한 테스트로<br/>
+                당신의 노래를 만나보세요</p>
+            </div>
+            <div className={style.wrapper_test_type}>
+                <div className={style.section1}>
+                    <div className={style.wrapper_keyword}
+                        onClick={()=>nav('/keyword')}
+                    >
+                        <div className={style.text}>KEYWORD</div>
+                        <p>취향에 맞춘 노래 추천</p>
+                        <div className={style.keyword_box}>
+                        </div>
+                    </div>
+
+                    <div className={style.wrapper_fortune}
+                        onClick={()=>nav('/fortune')}
+                    >
+                        <div className={style.text}>FORTUNE</div>
+                        <p>나의 운세 노래</p>
+                        <div className={style.fortune_box}></div>
+                    </div>
+                </div>
+
+                <div className={style.section2}>
+                    <div className={style.wrapper_mbti}
+                        onClick={()=>nav('/mbti')}>
+                        <div className={style.text}>MBTI</div>
+                        <p>성격 유형에 따른 노래 추천</p>
+                        <div className={style.wrapper_box}>
+                        <div className={style.mbti_box1}></div>
+                        <div className={style.mbti_box2}></div>
+                        <div className={style.mbti_box3}></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         </>
     )
