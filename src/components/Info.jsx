@@ -48,7 +48,6 @@ const Info = () => {
     }
 
     const passwordCheckHandler = (pw, pwr) => {
-        // const pwRegex = "^[a-z\d!@*&-_]{8,16}$";
 
         if (pw === '') {
             setPwError("비밀번호를 입력해주세요.");
