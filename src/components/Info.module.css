@@ -36,13 +36,13 @@
 h2 {
     color: white;
     font-family: 'Chaney';
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bolder;
 }
 
 p {
     color: white;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: regular;
 }
 
@@ -71,6 +71,16 @@ p {
         outline-color:#FDBBA9;
     }
     box-sizing: border-box;
+}
+
+.wrapper_pw small {
+    display: block; 
+    margin-top: 5px; 
+}
+
+.wrapper_pw_repeat small {
+    display: block; 
+    margin-top: 5px; 
 }
 
 .birth::-webkit-calendar-picker-indicator {
