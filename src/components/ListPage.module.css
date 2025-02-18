@@ -42,7 +42,17 @@
     }
 }
 
+.list:hover img{
+    filter: brightness(0) saturate(100%) invert(46%) sepia(31%) saturate(5036%) hue-rotate(343deg) brightness(97%) contrast(101%);
+    transition: 0.5s;
+}
+
 .img{
     width:40px;
     height: 40px;
+}
+
+.upperbox img:hover{
+    filter: brightness(0) saturate(100%) invert(46%) sepia(31%) saturate(5036%) hue-rotate(343deg) brightness(97%) contrast(101%);
+    transition: 0.5s;
 }
