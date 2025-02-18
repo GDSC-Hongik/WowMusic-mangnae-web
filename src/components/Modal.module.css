@@ -84,7 +84,8 @@ header {
 .ul{
     display:flex;
     flex-direction: column;
-    list-style-type: square;
+    align-items: flex-start;
+    list-style-type: none;
     padding: 30px 0;
     
 
@@ -96,4 +97,11 @@ header {
     font-weight: 600;
     line-height: 120%; /* 16.8px */
     letter-spacing: -0.154px;
+}
+
+.ul li{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
 }
