@@ -43,17 +43,21 @@
 .chat{
     border-radius: 2px;
     background: var(--Neutral-100, #3A3A3A);
-    padding: 12px 32px;
+    padding: 0px 24px;
     
     color: var(--Neutral-100, #F2F1EF);
     text-align: center;
     font-family: Pretendard;
-    font-size: 16px;
+    font-size: 45px;
     font-style: normal;
     font-weight: 600;
     line-height: 120%; /* 28.8px */
     letter-spacing: -0.264px;
     width: fit-content; /* ✅ 텍스트 길이에 맞게 조절 */
+}
+
+.chat p{
+    font-size: 18px;
 }
 
 
