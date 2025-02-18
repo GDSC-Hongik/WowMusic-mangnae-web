@@ -58,7 +58,7 @@ const KeyResultPage = () => {
                         {animate?<h1 className={styles.today}></h1>:<h1 className={styles.today}>오늘 하루 00 님의 노래는</h1>}
                         <div className={styles.lp} onClick={startAnimate} style={{transform: `translateX(${(currentMusic * (-550)) - 50}px)`, transition: "transform 1.5s ease-in-out",}}>
                             <img src={import.meta.env.BASE_URL + 'Lp.svg'} className={styles.lpImg} />
-                            <img src={import.meta.env.BASE_URL + 'Lp.svg'} className={styles.lpImg} />
+                            <img src={import.meta.env.BASE_URL + 'Lp.svg'} className={styles.lpImg} style={{visibility: animate ? "visible" : "hidden", }}/>
                             <img src={import.meta.env.BASE_URL + 'Lp.svg'} className={styles.lpImg} />
                             <img src={import.meta.env.BASE_URL + 'Lp.svg'} className={styles.lpImg} />
                             <img src={import.meta.env.BASE_URL + 'Lp.svg'} className={styles.lpImg} />
