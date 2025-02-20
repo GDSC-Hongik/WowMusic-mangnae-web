@@ -9,6 +9,17 @@ const KeyResultPage = () => {
     const nav = useNavigate();
     const location = useLocation();
     const keywords = location.state?.submitArr;
+    const genreMap = {
+        "발라드": "BALLAD",
+        "락": "ROCK",
+        "댄스": "DANCE",
+        "힙합": "HIPHOP",
+        "인디": "INDIE",
+        "R&B": "R&B",
+        "잘 모르겠어요": "NONE"
+      };
+    const getGenre = genreMap[keywords.four] || keywords.four;
+
     const [loading, setLoading] = useState(true);
     const [playList, setPlayList] = useState([
         {title: "자니", artist: "프라이머리", date: "2024.01.01", youtube_url: "https://youtu.be/sQxrSj6g-3o?si=dVwMAuylTDXnKA8U"},
@@ -93,7 +104,7 @@ const KeyResultPage = () => {
                     )}
                     <div className={styles.sideBar}>
                         <div className={styles.inner}>
-                            <p className={styles.genre}>ROCK</p>
+                            <p className={styles.genre}>{getGenre}</p>
                             <h2 className={styles.for}>사용자님을 위한</h2>
                             <h1 className={styles.list}>PLAYLIST</h1>
                             <ul>
