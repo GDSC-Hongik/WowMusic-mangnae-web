@@ -146,6 +146,9 @@
 
     border-radius: 2px;
     background: var(--Neutral-50, #777);
+    &::placeholder{
+        color: var(--Neutral-100, #F2F1EF);
+    }
 }
 .edit{
     color: var(--Neutral-70, #B0B0B0);
