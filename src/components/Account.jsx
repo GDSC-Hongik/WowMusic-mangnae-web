@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
-import { logout, getInf } from './Auth';
+import { logout, getInf, modifyInf } from './Auth';
 import styles from './Account.module.css';
 const Account = () =>{
     const nav = useNavigate();
@@ -9,24 +9,55 @@ const Account = () =>{
     const [emailEdit, setEmailEdit] = useState(false);
     const [pwEdit, setPwEdit] = useState(false); 
     const [user, setUser] = useState({
-        name: '',
+        username: '',
         email: '',
         password: '',
     })
+    const [tempUser, setTempUser] = useState({...user});
+    useEffect(() => {
+        const data = getInf();
+        setUser({
+            username: data.name,
+            email: data.email,
+            password: '',
+        });
+    }, []);
+
     const handleClick = (e) =>{
         const {name, value} = e.target;
-        setUser({...user, [name]:value});
+        setTempUser({...tempUser, [name]:value});
     }
-    const clickName = () => {
+    const handleSave = async (e) => {
+        let updateData = { [e] : user[e] };
+
+        const res = await modifyInf(updateData);
+        if(res){
+            console.log('정보 업데이트 성공');
+        } else {
+            console.log('정보 업데이트 실패');
+        }
+    }
+    const clickName = (e) => {
         setNameEdit((prev) => (!prev));
+        if(nameEdit){
+            setUser({...user, username: tempUser.username})
+            handleSave(e);
+        }
     }
-    const clickEmail = () => {
+    const clickEmail = (e) => {
         setEmailEdit((prev) => (!prev));
+        if(emailEdit){
+            setUser({...user, email: tempUser.email})
+            handleSave(e);
+        }
     }
-    const clickPw = () => {
+    const clickPw = (e) => {
         setPwEdit((prev) => (!prev));
+        if(pwEdit){
+            setUser({...user, password: tempUser.password})
+            handleSave(e);
+        }
     }
-    const data = getInf();
 
     const clickLogout = () => {
         logout(nav);
@@ -40,7 +71,7 @@ const Account = () =>{
             </div>
             <div className={styles.bottom}>
                 <div className={styles.profile}>
-                    <h2>{data.name}</h2>
+                    <h2>{user.username}</h2>
                     <p>email@email.com</p>
                 </div>
                 <div className={styles.inform}>
@@ -49,11 +80,11 @@ const Account = () =>{
                             <p className={styles.p}>Name</p>
                             <form className={styles.form}>
                                 <input className={nameEdit?styles.cinput:styles.input}
-                                    type = "name"
-                                    id = "name"
-                                    name = "name"
+                                    type = "username"
+                                    id = "username"
+                                    name = "username"
                                     placeholder = "사용자이름"
-                                    value = {user.name}
+                                    value = {tempUser.username}
                                     onChange = {handleClick}
                                     disabled={!nameEdit}
                                     />
@@ -69,7 +100,7 @@ const Account = () =>{
                                     id = "email"
                                     name = "email"
                                     placeholder = "사용자이메일"
-                                    value = {user.email}
+                                    value = {tempUser.email}
                                     onChange = {handleClick}
                                     disabled={!emailEdit}
                                     />
@@ -85,7 +116,7 @@ const Account = () =>{
                                     id = "password"
                                     name = "password"
                                     placeholder = "사용자패스워드"
-                                    value = {user.password}
+                                    value = {tempUser.password}
                                     onChange = {handleClick}
                                     disabled={!pwEdit}
                                     />

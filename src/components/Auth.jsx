@@ -67,3 +67,18 @@ export const getInf = () =>{
 
     return data;
 }
+
+export const modifyInf = async (props) => {
+    try{
+        const res = await api.patch('/users/update/', props, {
+            headers:{
+                'Content-Type': 'application/json',
+                //Authorization: `Bearer ${localStorage.getItem('token')}`,
+            },
+        });
+        return res.data;
+    } catch (error){
+        console.error("Error: ",error);
+        return null;
+    }
+}
