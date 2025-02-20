@@ -9,6 +9,7 @@ const KeyResultPage = () => {
     const nav = useNavigate();
     const location = useLocation();
     const keywords = location.state?.submitArr;
+    const [username, setUsername] = useState(localStorage.getItem("name") ?? "사용자");
     const genreMap = {
         "발라드": "BALLAD",
         "락": "ROCK",
@@ -105,7 +106,7 @@ const KeyResultPage = () => {
                     <div className={styles.sideBar}>
                         <div className={styles.inner}>
                             <p className={styles.genre}>{getGenre}</p>
-                            <h2 className={styles.for}>사용자님을 위한</h2>
+                            <h2 className={styles.for}>{username}님을 위한</h2>
                             <h1 className={styles.list}>PLAYLIST</h1>
                             <ul>
                                 {playList.map((song, index) => (

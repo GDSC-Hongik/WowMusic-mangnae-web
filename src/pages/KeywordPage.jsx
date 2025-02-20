@@ -48,9 +48,11 @@ const KeywordPage = () =>{
         setCurrentIndex(0);
         setTypedText('');
     }
-
+    const [username, setUsername] = useState(undefined);
     useEffect(() => {
         const messages = menu_list[step - 1].message;
+        const storedName = localStorage.getItem("name");
+        setUsername(storedName ?? "사용자");
 
         if (currentIndex < messages.length) {
             let charIndex = 0;
@@ -95,10 +97,10 @@ const KeywordPage = () =>{
                             <div className={style.chatbox}>
                                 {displayed.map((msg, index) => (
                                     <div key={index} className={style.chat}>
-                                        <p>{msg}</p>
+                                        <p>{msg.replace("사용자", username ?? "사용자")}</p>
                                     </div>
                                 ))}
-                                {typedText && <div className={style.chat}> <p>{typedText}</p> </div>}
+                                {typedText && <div className={style.chat}> <p>{typedText.replace("사용자", username ?? "사용자")}</p> </div>}
                             </div>
                         </div>
                     </div>

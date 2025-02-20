@@ -18,6 +18,7 @@ export const login = async ({email, password}, navigate) =>{
         api.defaults.headers.common["Authorization"] = `Bearer ${res.data.token}`;
         console.log(res.data.message);
         console.log(res.data);
+        console.log(res.data.email);
         navigate("/");
         return res.data;
     }
