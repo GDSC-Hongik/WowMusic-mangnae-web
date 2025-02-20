@@ -10,6 +10,7 @@ import KeywordPage from './pages/KeywordPage';
 import MbtiPage from './pages/MbtiPage';
 import ListPage from './pages/ListPage';
 import KeyResultPage from './pages/KeyResultPage';
+import MyPage from './pages/MyPage';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/mbti" element={<MbtiPage />} />
         <Route path="/list" element={<ListPage />} />
         <Route path="/kResult" element={<KeyResultPage />} />
+        <Route path="/my" element={<MyPage />} />
       </Routes>
       
     </Router>

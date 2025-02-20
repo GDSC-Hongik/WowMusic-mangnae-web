@@ -1,0 +1,37 @@
+.container{
+    padding: 30px 30px 30px 300px;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.head h2{
+    color: var(--Neutral-70, #B0B0B0);
+    font-family: CHANEY;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 38.4px */
+    letter-spacing: -0.352px;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--Neutral-70, #B0B0B0);
+    padding-top: 25px;
+}
+.list{
+    display: inline-flex;
+    width: 50%;
+    padding: 20px 0;
+    flex-direction: column;
+    gap:10px;
+}
+.lpWrapper{
+    display: inline-flex;
+    width: 50%;
+    padding: 20px;
+}

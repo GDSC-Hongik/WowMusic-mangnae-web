@@ -1,0 +1,63 @@
+.back{
+    background: #111;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    padding-top:4%;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: center;
+    left:0;
+    width: 180px;
+    position: absolute;
+    height: auto;
+    padding : 15px;
+    gap: 24px;
+    overflow-y: auto;
+    top:35%;
+}
+
+.colorP{
+    color: var(--Ellipse-23-300, #FC9A7E);
+
+    font-family: Pretendard;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 25.2px */
+    letter-spacing: -0.198px;
+}
+.noP{
+    color: var(--Neutral-50, #777);
+
+    font-family: Pretendard;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 25.2px */
+    letter-spacing: -0.198px;
+}
+
+.sidebar p button{
+    width: 29px;
+    height: 13px;
+}
+
+.bnt{
+    background: var(--primary, #FA5628);
+    border:0;
+}
+.bntX{
+    background-color: transparent;
+    border: 1px solid var(--Neutral-50, #777);
+}

@@ -68,7 +68,7 @@ const KeyResultPage = () => {
                 <div className={`${styles.container} ${animate ? styles.slide : ""}`}>
                     {clicked?<div className={clicked ? styles.youtubeBack : ""} onClick={() => {setClicked(false);}}><iframe className={styles.youtube} src={`https://www.youtube.com/embed/${videoId}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="true"></iframe></div>:""}
                     <div className={styles.lpWrapper}>
-                        {animate?<h1 className={styles.today}></h1>:<h1 className={styles.today}>오늘 하루 00 님의 노래는</h1>}
+                        {animate?<h1 className={styles.today}></h1>:<h1 className={styles.today}>오늘 하루 사용자님의 노래는</h1>}
                         <div className={styles.lp} onClick={startAnimate} style={{transform: `translateX(${(currentMusic * (-550)) - 50}px)`, transition: "transform 1.5s ease-in-out",}}>
                             <img src={import.meta.env.BASE_URL + 'Lp.svg'} className={styles.lpImg} onClick={animate?clickLp:undefined}/>
                             <img src={import.meta.env.BASE_URL + 'Lp.svg'} className={styles.lpImg} style={{visibility: animate ? "visible" : "hidden", }} onClick={clickLp} />
@@ -94,7 +94,7 @@ const KeyResultPage = () => {
                     <div className={styles.sideBar}>
                         <div className={styles.inner}>
                             <p className={styles.genre}>ROCK</p>
-                            <h2 className={styles.for}>00 님을 위한</h2>
+                            <h2 className={styles.for}>사용자님을 위한</h2>
                             <h1 className={styles.list}>PLAYLIST</h1>
                             <ul>
                                 {playList.map((song, index) => (
