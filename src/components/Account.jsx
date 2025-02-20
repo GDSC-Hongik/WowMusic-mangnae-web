@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-import { logout } from './Auth';
+import { logout, getInf } from './Auth';
 import styles from './Account.module.css';
 const Account = () =>{
     const nav = useNavigate();
@@ -13,15 +13,7 @@ const Account = () =>{
         email: '',
         password: '',
     })
-    const handleName = (e) =>{
-        const {name, value} = e.target;
-        setUser({...user, [name]:value});
-    }
-    const handleEmail = (e) =>{
-        const {name, value} = e.target;
-        setUser({...user, [name]:value});
-    }
-    const handlePw = (e) =>{
+    const handleClick = (e) =>{
         const {name, value} = e.target;
         setUser({...user, [name]:value});
     }
@@ -34,7 +26,7 @@ const Account = () =>{
     const clickPw = () => {
         setPwEdit((prev) => (!prev));
     }
-
+    const data = getInf();
 
     const clickLogout = () => {
         logout(nav);
@@ -48,7 +40,7 @@ const Account = () =>{
             </div>
             <div className={styles.bottom}>
                 <div className={styles.profile}>
-                    <h2>이름</h2>
+                    <h2>{data.name}</h2>
                     <p>email@email.com</p>
                 </div>
                 <div className={styles.inform}>
@@ -62,7 +54,7 @@ const Account = () =>{
                                     name = "name"
                                     placeholder = "사용자이름"
                                     value = {user.name}
-                                    onChange = {handleName}
+                                    onChange = {handleClick}
                                     disabled={!nameEdit}
                                     />
 
@@ -78,7 +70,7 @@ const Account = () =>{
                                     name = "email"
                                     placeholder = "사용자이메일"
                                     value = {user.email}
-                                    onChange = {handleEmail}
+                                    onChange = {handleClick}
                                     disabled={!emailEdit}
                                     />
 
@@ -94,7 +86,7 @@ const Account = () =>{
                                     name = "password"
                                     placeholder = "사용자패스워드"
                                     value = {user.password}
-                                    onChange = {handlePw}
+                                    onChange = {handleClick}
                                     disabled={!pwEdit}
                                     />
 

@@ -7,7 +7,7 @@ const Header = () => {
     const nav = useNavigate();
     const [checked, setChecked] = useState(false);
     useEffect(() => {
-        if(localStorage.getItem("token") === null){
+        if(localStorage.getItem("token") !== null){
             setChecked(true);
         }
     }, []);
