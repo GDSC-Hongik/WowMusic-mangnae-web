@@ -1,0 +1,76 @@
+.box {
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+
+    width: 100%;
+    height: 400px;
+    margin-top: -490px;
+}
+
+.box_content {
+    box-sizing: border-box;
+    /* border: 1px solid blue; */
+    height: 60px;
+    width: 95%;
+    margin: 5px auto;
+
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.box_content p {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: -0.011em;
+
+    color: #B0B0B0;
+}
+
+.button_box {
+    margin-left: auto;
+    display: flex;
+    align-items: center; /* 버튼 정렬 */
+    gap: 70px; 
+}
+
+.box_content img {
+    margin: 0;
+}
+
+.right:hover {
+    content: url(./right_hover.png);
+}
+
+.right:active {
+    content: url(./right_press.png);
+}
+
+.left:hover {
+    content: url(./right_hover.png);
+}
+
+.left:active {
+    content: url(./right_press.png);
+}
+
+.img_box {
+    box-sizing: border-box;
+    /* border: 1px solid white; */
+
+    height: 270px;
+    width: 95%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+
+    gap: 20px;
+}

@@ -14,7 +14,7 @@ const HomePage = () => {
             display: "flex",
             flexDirection: "column",
             
-            }}>
+        }}>
             <Header />
 
             <MainView style={{
