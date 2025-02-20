@@ -5,13 +5,14 @@ header {
 }
 
 .blur{
+    z-index: 900;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     min-height: inherit;
     width: inherit;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(17, 17, 17, 0.70);
 }
 
 .box{
@@ -30,6 +31,18 @@ header {
     letter-spacing: -0.22px;
 }
 
+.box p{
+    padding: 15px 0;
+    
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 24px */
+    letter-spacing: -0.22px;
+}
+
 .modal{
     display: flex;
     height: 320px;
@@ -42,6 +55,7 @@ header {
     backdrop-filter: blur(6.949999809265137px);
 }
 
+
 .keyword{
     display: flex;
     width: 154px;
@@ -49,6 +63,17 @@ header {
     justify-content: center;
     align-items: center;
     background: rgba(250, 86, 40, 0.20);
+
+    color: var(--primary, #FA5628);
+    font-family: CHANEY;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 16.8px */
+    letter-spacing: -0.154px;
+}
+.modal p{
+    padding: 8px 12px;
 
     color: var(--primary, #FA5628);
     font-family: CHANEY;
@@ -104,4 +129,5 @@ header {
     flex-direction: row;
     gap: 10px;
     align-items: center;
+    padding: 0 0 16px;
 }

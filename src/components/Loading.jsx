@@ -19,7 +19,7 @@ const Loading = () => {
                     duration: 5,
                 }}/>
                 <div className={style.wait}>
-                    <p className={style.text}>00 님에게</p>
+                    <p className={style.text}>사용자님에게</p>
                     <p className={style.text}>어울리는 노래를 찾고 있어요</p>
                 </div>
             </div>

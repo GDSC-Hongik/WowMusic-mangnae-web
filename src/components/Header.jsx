@@ -1,10 +1,16 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import {useNavigate} from "react-router-dom";
 import style from "./Header.module.css";
 
 
 const Header = () => {
     const nav = useNavigate();
+    const [checked, setChecked] = useState(false);
+    useEffect(() => {
+        if(localStorage.getItem("token") !== null){
+            setChecked(true);
+        }
+    }, []);
 
     return (
         <header className={style.Header}>
@@ -15,13 +21,12 @@ const Header = () => {
                 logo
             </button>
     
-            <button className={style.playlist}>myplaylist</button>
         
             <button 
                 className={style.logIn}
-                onClick={()=>nav("/login")}
+                onClick={checked?()=>nav("/my") : ()=>nav("/login")}
             >
-                log-in
+                {checked?"my":"log-in"}
             </button>
             
         </header>

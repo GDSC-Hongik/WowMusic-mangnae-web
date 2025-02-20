@@ -10,10 +10,12 @@ import KeywordPage from './pages/KeywordPage';
 import MbtiPage from './pages/MbtiPage';
 import ListPage from './pages/ListPage';
 import KeyResultPage from './pages/KeyResultPage';
+import MyPage from './pages/MyPage';
 import BirthPage from './pages/BirthPage';
 import BloodTypePage from './pages/BloodTypePage';
 import ConstellationPage from './pages/ConstellationPage';
 import FortuneResultPage from './pages/FortuneResultPage';
+
 
 
 function App() {
@@ -29,6 +31,7 @@ function App() {
         <Route path="/mbti" element={<MbtiPage />} />
         <Route path="/list" element={<ListPage />} />
         <Route path="/kResult" element={<KeyResultPage />} />
+        <Route path="/my" element={<MyPage />} />
         <Route path="/birth" element={<BirthPage />} />
         <Route path="/blood" element={<BloodTypePage />} />
         <Route path="/constellation" element={<ConstellationPage />} />
