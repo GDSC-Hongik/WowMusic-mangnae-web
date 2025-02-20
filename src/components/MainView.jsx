@@ -73,33 +73,33 @@ const MainView = () => {
             />
 
             <BannerIcon 
-                title={"Winter Poem"}
-                singer={"뎁트"}
-                content={"어울려요"}
+                title={"Antifreeze"}
+                singer={"검정치마"}
+                content={"문학적이고 로맨틱한 가사가 인상적이에요."}
             />
 
             <BannerIcon 
-                title={"Winter Poem"}
-                singer={"뎁트"}
-                content={"어울려요"}
+                title={"Happy"}
+                singer={"DAY6"}
+                content={"노래 분위기는 전체적으로 밝은데 비해 가사 속 화자는 간절하게 행복을 갈구하는 느낌이 있어요."}
             />
 
             <BannerIcon 
-                title={"Winter Poem"}
-                singer={"뎁트"}
-                content={"어울려요"}
+                title={"힘 내!"}
+                singer={"소녀시대"}
+                content={"희망찬 멜로디와 그에 완벽히 들어맞는 가사로 응원이 필요할 때 듣기 좋아요."}
             />
 
             <BannerIcon 
-                title={"Winter Poem"}
-                singer={"뎁트"}
-                content={"어울려요"}
+                title={"역겹겠지만"}
+                singer={"B.I"}
+                content={"슬프지만 경쾌하고, 자극적이지만 편안한 곡이에요."}
             />
 
             <BannerIcon 
-                title={"Winter Poem"}
-                singer={"뎁트"}
-                content={"어울려요"}
+                title={"밤편지"}
+                singer={"아이유유"}
+                content={"사랑하는 사람의 숙면을 빌어주는 가사가 아이유의 목소리와 잘 어울려요."}
             />
 
         </div>
