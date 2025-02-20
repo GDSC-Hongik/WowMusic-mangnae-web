@@ -77,13 +77,16 @@ const Info = () => {
         };
 
         try {
-            const response = await fetch('http://192.168.212.15:8000/api/users/signup/', {
+            const response = await fetch('http://52.79.151.35/api/users/signup/', {
                 method: 'POST',
                 headers: {
                     'Content-Type' : 'application/json',
                 },
                 body: JSON.stringify(userData),
             });
+
+            // const responseText = await response.text();
+            // console.log("서버 응답 : ", responseText);
 
             if (response.ok) {
                 const data = await response.json();
