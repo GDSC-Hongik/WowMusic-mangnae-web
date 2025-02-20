@@ -63,17 +63,18 @@
     color: var(--Neutral-100, #F2F1EF);
 
     font-family: Pretendard;
-    font-size: 28px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 500;
     line-height: 140%; /* 44.8px */
     letter-spacing: -0.352px;
 }
 .profile p{
+    padding-top: 10px;
     color: var(--Neutral-100, #F2F1EF);
 
     font-family: Pretendard;
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%; /* 25.2px */
@@ -84,7 +85,7 @@
 .inform{
     display: flex;
     width: 50%;
-    padding: 20px;
+    padding: 0 15px;
     box-sizing: border-box;
     border-left: 1px solid var(--Neutral-70, #B0B0B0);
 }
@@ -92,6 +93,7 @@
     width: 100%;
 }
 .p{
+    padding-top: 15px;
     color: var(--Neutral-70, #B0B0B0);
 
     font-family: Pretendard;
@@ -105,7 +107,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0px;
+    padding: 15px 0px;
 
     border-bottom: 1px solid var(--Neutral-10, #3A3A3A);
 }
