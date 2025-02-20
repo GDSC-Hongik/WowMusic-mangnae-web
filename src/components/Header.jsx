@@ -18,7 +18,7 @@ const Header = () => {
                 onClick={()=>nav("/")}
                 className={style.logo}
             >
-                logo
+                <img src={import.meta.env.BASE_URL + 'Union.svg'} />
             </button>
     
         

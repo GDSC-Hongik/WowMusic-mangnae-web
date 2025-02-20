@@ -23,7 +23,7 @@
 
     background-color: #111;
     color: white;
-    border: 1px solid white;
+    border: none;
 
     position: absolute;
     top : 9px;
@@ -46,12 +46,12 @@
 .Header .logIn {
     width: 103px;
 
-    background-color: white;
+    background: var(--Neutral-100, #F2F1EF);
     color: black;
     border: 1px solid white;
 
     position: absolute;
-    top : 9px;
+    top : 7px;
     left: 92%;
 }
 
