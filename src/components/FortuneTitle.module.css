@@ -3,13 +3,10 @@
     border-bottom: 1px solid rgba(119, 119, 119, 1);
 
     width: 95%;
-    height: 300px;
+    height: 220px;
     margin: 10px auto;
     margin-top: 70px;
 
-    /* position: absolute; */
-    /* left: 50%;
-    transform: translateX(-50%);  */
 }
 
 .arrow:hover {
@@ -20,10 +17,10 @@
     position: relative;
     text-align: center;
     
-    height: 250px;
+    height: 200px;
     width: 800px;
     
-    margin: -50px auto;
+    margin: -70px auto;
 
     display: flex;
     flex-direction: row;
@@ -47,7 +44,7 @@
     color: white;
 }
 
-p {
+.text_box p {
     font-family: 'Pretendard';
     font-size: 20px;
     font-style: normal;
