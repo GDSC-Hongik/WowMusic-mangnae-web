@@ -72,7 +72,7 @@ const Account = () =>{
             <div className={styles.bottom}>
                 <div className={styles.profile}>
                     <h2>{user.username}</h2>
-                    <p>email@email.com</p>
+                    <p>{user.email}</p>
                 </div>
                 <div className={styles.inform}>
                     <ul>
@@ -83,7 +83,7 @@ const Account = () =>{
                                     type = "username"
                                     id = "username"
                                     name = "username"
-                                    placeholder = "사용자이름"
+                                    placeholder = {user.username}
                                     value = {tempUser.username}
                                     onChange = {handleClick}
                                     disabled={!nameEdit}
@@ -99,7 +99,7 @@ const Account = () =>{
                                     type = "email"
                                     id = "email"
                                     name = "email"
-                                    placeholder = "사용자이메일"
+                                    placeholder = {user.email}
                                     value = {tempUser.email}
                                     onChange = {handleClick}
                                     disabled={!emailEdit}

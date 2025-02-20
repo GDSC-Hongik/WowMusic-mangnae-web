@@ -1,9 +1,11 @@
 import Header from "../components/Header";
+import { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import style from "../components/FortunePage.module.css";
 
 const FortunePage = () =>{
     const nav = useNavigate();
+    const [username, setUsername] = useState(localStorage.getItem("name") ?? "사용자");
     return(
         <>
         <div style={{
@@ -19,7 +21,7 @@ const FortunePage = () =>{
             <div className={style.box}>
                 <div className={style.text}>Fortune</div>
                 <div className={style.content}>
-                    OO님의<br />
+                    {username}님의<br />
                     운세와 어울리는 노래를 알려드려요<br />
                 </div>
                 <div className={style.smaller_content}>
