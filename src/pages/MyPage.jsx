@@ -6,7 +6,7 @@ import MyPlaylist from '../components/MyPlaylist';
 import styles from '../components/MyPage.module.css';
 
 const MyPage = () =>{
-    const [checked, setChecked] = useState(false);
+    const [checked, setChecked] = useState(true);
     const handleChecked = (pre) =>{
         setChecked(pre);
     }

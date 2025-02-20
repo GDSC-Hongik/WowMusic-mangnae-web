@@ -12,7 +12,7 @@ export const login = async ({email, password}, navigate) =>{
             password,
         });
         localStorage.setItem("token", res.data.token);
-        localStorage.setItem("name", res.data.name);
+        localStorage.setItem("name", res.data.username);
         localStorage.setItem("email", res.data.email);
         localStorage.setItem("password", res.data.password);
         api.defaults.headers.common["Authorization"] = `Bearer ${res.data.token}`;
