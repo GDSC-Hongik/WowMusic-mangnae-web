@@ -1,0 +1,161 @@
+.box {
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    position: absolute;
+    left: calc(50% - 433px/2 - 0.5px);
+    top: 170px;
+}
+
+.text {
+    background-color: rgba(250, 86, 40, 0.2);
+    color: rgba(250, 86, 40, 1);
+
+    font-family: 'Chaney';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    padding: 5px 10px;
+    display: inline-block;
+    letter-spacing: -0.011em;
+
+    width: 142px;
+    height: 25px;
+    text-align: center;
+    
+}
+
+.content {
+    color: white;
+    text-align: center;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.smaller_content {
+    color: white;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: -0.011em;
+
+    color: #D1D1D1;
+
+    margin-top: -12px;
+}
+
+.line {
+    margin-top: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    border-top: 1px solid rgba(119, 119, 119, 1);
+    width: 95%; 
+}
+
+.img_box {
+    height: 319px;
+    width: 95%;
+
+    margin: 5px auto;
+    /* border: 1px solid blue; */
+
+    display: flex;
+    flex-direction: row;
+}
+
+.img_box div {
+    position: relative;
+    width: 33%;
+    height: 315px;
+    padding: 2px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.section1 {
+    border-right: 1px solid rgba(119, 119, 119, 1);
+}
+
+.section2 {
+    border-right: 1px solid rgba(119, 119, 119, 1);
+}
+
+.birth:hover {
+    content: url(./birth_variant.png);
+}
+
+.blood:hover {
+    content: url(./blood_variant.png);
+}
+
+.constellation:hover {
+    content: url(./constellation_variant.png);
+}
+
+.test_info {
+    box-sizing: border-box;
+    border-top: 1px solid rgba(119, 119, 119, 1);
+    border-bottom: 1px solid rgba(119, 119, 119, 1);
+
+    width: 95%;
+    height: 45px;
+    margin: 2px auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.test_info h2 {
+    margin: 10px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+   
+    letter-spacing: -0.011em;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+}
+
+.time::before {
+    content: url(./clock_Icon.png);
+    margin-right: 5px;
+
+    display: inline-block;
+}
+
+.que {
+    display: flex;
+    align-items: center;
+}
+
+.que::before {
+    content: url(./que_Icon.png);
+    margin-right: 5px;
+
+    display: inline-block;
+}

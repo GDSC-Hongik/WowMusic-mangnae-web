@@ -12,7 +12,7 @@ const KeywordPage = () =>{
     const [modalOpened, setModalOpened] = useState(true); // 모달창
     const [step, setStep] = useState(1); // 현재 페이지
     const [clicked, setClicked] = useState(''); // pressed 효과 만들기
-    const [submitArr, setSubmitArr] = useState({ // 키워드 선택 기록용용
+    const [submitArr, setSubmitArr] = useState({ // 키워드 선택 기록용
         one: "",
         two: "",
         three: "",
