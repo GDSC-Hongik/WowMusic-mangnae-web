@@ -5,7 +5,7 @@ const BannerIcon = ({title, singer, content, onClick}) => {
     return (
         <div className={style.wrapper}>
             <div className={style.wrapper_text}>
-                <img src="/Subtract.png"
+                <img src="/Frame26.png"
                     alt="LP"
                     className={style.Subtract}
                 />

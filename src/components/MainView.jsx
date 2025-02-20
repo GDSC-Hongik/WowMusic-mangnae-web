@@ -117,6 +117,7 @@ const MainView = () => {
                         <div className={style.text}>KEYWORD</div>
                         <p>취향에 맞춘 노래 추천</p>
                         <div className={style.keyword_box}>
+                            <img src="./keyword.png" alt="" />
                         </div>
                     </div>
 
@@ -125,7 +126,9 @@ const MainView = () => {
                     >
                         <div className={style.text}>FORTUNE</div>
                         <p>나의 운세 노래</p>
-                        <div className={style.fortune_box}></div>
+                        <div className={style.fortune_box}>
+                            <img src="./fortune.png" alt="" />
+                        </div>
                     </div>
                 </div>
 
@@ -135,9 +138,7 @@ const MainView = () => {
                         <div className={style.text}>MBTI</div>
                         <p>성격 유형에 따른 노래 추천</p>
                         <div className={style.wrapper_box}>
-                        <div className={style.mbti_box1}></div>
-                        <div className={style.mbti_box2}></div>
-                        <div className={style.mbti_box3}></div>
+                            <img src="./mbti.png" alt="" />
                         </div>
                     </div>
                 </div>

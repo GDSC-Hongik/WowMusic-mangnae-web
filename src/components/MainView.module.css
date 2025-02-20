@@ -249,64 +249,28 @@ span {
 }
 
 .keyword_box {
-    width: 96px;
-    height: 103px;
-    background-color: rgba(217, 217, 217, 1);
+    width: 130px;
+    height: 130px;
 
     position: relative;
-
-    margin-left: 230px;
-    margin-top: 25px;
+    margin-left: auto;
+    margin-top: 0px;
 }
 
 .fortune_box {
-    width: 135px;
-    height: 226px;
-    background-color: rgba(217, 217, 217, 1);
+    width: 130px;
+    height: 130px;
+    /* background-color: rgba(217, 217, 217, 1); */
 
-    margin-left: 325px;
-    margin-top: -98px;
+    margin-left: auto;
+    margin-top: -2px;
 }
 
 .wrapper_box {
     width: 40%;
     height: 150px;
     position: relative;
-    margin-left: 70%;
+    margin-left: auto;
     margin-top: -27px;
-
-    flex: none;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
 }
 
-.wrapper_box div {
-    width: 87px;
-    height: 178px;
-
-    margin-top: 15px;
-
-    -ms-transform: skew(0deg, -20deg);
-    -webkit-transform: skew(0deg, -20deg);
-    transform: skew(0deg, -20deg);
-}
-
-.mbti_box1 {
-    z-index: 1;
-    margin-right: -40px;
-
-    background-color: rgba(217, 217, 217, 1);
-}
-
-.mbti_box2 {
-    z-index: 2;
-    margin-right: -25px;
-
-    background-color: rgba(217, 217, 217, 0.9);
-}
-
-.mbti_box3 {
-    z-index: 1;
-    background-color: rgba(217, 217, 217, 0.8);
-}
