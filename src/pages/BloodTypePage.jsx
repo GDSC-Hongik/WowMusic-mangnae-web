@@ -17,7 +17,7 @@ const BloodTypePage = () => {
     const handleNext = async () => {
         const bloodData = {bloodType}
         console.log(bloodData);
-        nav('/fResult');
+        nav('/fResult', {state : bloodData});
     }
 
     useEffect(() => {

@@ -15,12 +15,11 @@ const BirthPage = () => {
     const todayMonth = date.getMonth() + 1;
     const todayDay = date.getDate();
 
-    // console.log(date, todayYear,  todayMonth, todayDay)
-
     const [year, setYear] = useState(todayYear);
     const [month, setMonth] = useState(todayMonth);
     const [day, setDay] = useState(todayDay);
     const [isActive, setIsActive] = useState('solar');
+
 
     const years = Array.from({length: 70}, (_, i) => ({
         value: todayYear - 70 + i + 1,
@@ -42,10 +41,6 @@ const BirthPage = () => {
         
     }
 
-    /*useEffect(() => {
-        console.log("현재 선택된 값:", isActive);
-    }, [isActive]);*/
-
     const handleNext = async () => {
         const birthData = {
             year,
@@ -55,8 +50,9 @@ const BirthPage = () => {
         };
 
         console.log(birthData);
-        nav('/fResult');
-    }
+        // console.log(submitArr);
+        nav('/fResult', {state: birthData});
+    };
 
     return (
         <>

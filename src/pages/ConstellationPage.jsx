@@ -55,7 +55,7 @@ const ConstellationPage = () => {
     const handleNext = async () => {
             const conData = {constellationType}
             console.log(conData);
-            nav('/fResult');
+            nav('/fResult', {state: conData});
     }
     
     useEffect(() => {
