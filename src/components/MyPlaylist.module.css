@@ -166,3 +166,6 @@
 .sub p:not(:last-child) {
     border-right: 1px solid var(--Neutral-50, #777);
 }
+
+.list::-webkit-scrollbar {width: 10px}
+.list::-webkit-scrollbar-thumb {background-color: #b4b4b4; border-radius: 10px; background-clip: padding-box}
