@@ -26,7 +26,7 @@ const KeyResultPage = () => {
         {title: "자니", artist: "프라이머리", date: "2024.01.01", youtube_url: "https://youtu.be/sQxrSj6g-3o?si=dVwMAuylTDXnKA8U"},
         {title: "여행", artist: "볼빨간사춘기", date: "2024.01.01", youtube_url: "https://youtu.be/xRbPAVnqtcs?si=pKSZNWZq2EgwHcFG"},
         {title: "HAPPY", artist: "DAY6", date: "2024.01.01", youtube_url: "https://youtu.be/sQxrSj6g-3o?si=dVwMAuylTDXnKA8U"},
-        {title: "어제의 너, 오늘의 나", artist: "도경수", date: "2024.01.01", youtube_url: "https://youtu.be/sQxrSj6g-3o?si=dVwMAuylTDXnKA8U"},
+        {title: "어제의 너, 오늘의 나", artist: "도경수", date: "2024.05.07", youtube_url: "https://youtu.be/FXNjkUKAu-0?si=aIjuDOL_pk_8hXZd"},
         {title: "눈이 오잖아", artist: "이무진", date: "2024.01.01", youtube_url: "https://youtu.be/sQxrSj6g-3o?si=dVwMAuylTDXnKA8U"},
     ]);
     const [animate, setAnimate] = useState(false);
