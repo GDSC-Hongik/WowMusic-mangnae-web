@@ -33,21 +33,21 @@ const MainView = () => {
 
         <div className={style.picture}>
             <div className={style.back_1}>
-            <img src="/Frame27.png"
-                alt="로고1"
-                className={style.picture_27_1}
-            />
+                <img src="/Frame26.png"
+                    alt="로고1"
+                    className={style.picture_27_1}
+                />
             </div>
 
             <div className={style.front}>
-            <img src="/Frame26.png"
-                alt="로고2"
-                className={style.picture_26}
-            />
+                <img src="/Frame26.png"
+                    alt="로고2"
+                    className={style.picture_26}
+                />
             </div>
 
             <div className={style.back_2}>
-            <img src="/Frame27.png"
+            <img src="/Frame26.png"
                 alt="로고3"
                 className={style.picture_27_2}
             />
